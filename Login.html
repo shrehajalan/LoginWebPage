@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styleLogin.css">
+
+<script >
+function onclickSubmit()
+{
+  localStorage.setItem("username",document.getElementById('username').value)
+}
+</script>
+</head>
+
+<body>
+
+<h2>Login Form</h2>
+
+<form action="./city_details.html" method="post">
+
+<center>
+    <div class="container">
+
+      <label for="username"><b><Username</b></label><br>
+      <input type="text" placeholder="Enter Username" id="username" required><br>
+
+      <label for="password"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" id="password" required><br>
+        
+      <button onclick="onclickSubmit()" type="submit">Login</button>
+
+  </div>
+</center>
+ 
+</form>
+
+</body>
+
+</html>
